@@ -71,3 +71,8 @@ function toggleProfileData() {
         elem.style.display = "block";
     }
 }
+
+const echoLog = () => {
+    const urlParam = new URLSearchParams(window.location.search);
+    window.alert(urlParam.get('param'));
+}
